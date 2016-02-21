@@ -12,6 +12,15 @@ header.header
     ul.nav__menu
       li.nav__item(class="{{isActiveRoute regex='home|post'}}")
         a(href="{{pathFor route='home'}}") Library
+        ul.nav__menu
+          li.nav__item(class="{{isActiveRoute}}")
+            a(href="{{pathFor}}") Components
+          li.nav__item(class="{{isActiveRoute}}")
+            a(href="{{pathFor}}") Courses
+          li.nav__item(class="{{isActiveRoute}}")
+            a(href="{{pathFor}}") Experiments
+          li.nav__item(class="{{isActiveRoute}}")
+            a(href="{{pathFor}}") Templates
       li.nav__item(class="{{isActiveRoute 'blog'}}")
         a(href="{{pathFor route='blog'}}") Blog
       li.nav__item(class="{{isActiveRoute 'slack'}}")
@@ -19,11 +28,8 @@ header.header
       li.nav__item(class="{{isActiveRoute 'pricing'}}")
         a(href="{{pathFor route='pricing'}}") Pricing
       li.nav__item
-
-        //- Icon (Block)
         a.icon.icon--dots-horizontal(href="#")
           img(src="img/icons/dots-horizontal.svg")
-
         ul.nav__menu
           li.nav__item(class="{{isActiveRoute 'about'}}")
             a(href="{{pathFor route='about'}}") About
@@ -33,6 +39,9 @@ header.header
             a(href="{{pathFor route='legal'}}") Legal
           li.nav__item(class="{{isActiveRoute 'support'}}")
             a(href="{{pathFor route='support'}}") Support
+
+  //- Header Divider (Element)
+  .header__divider
 
   //- Search (Block)
   .search
@@ -47,4 +56,4 @@ header.header
       li.nav__item
         a(href="{{pathFor route='login'}}") Log In
       li.nav__item
-        a(href="{{pathFor route='signup'}}") Sign Up — It's Free
+        a.btn(href="{{pathFor route='signup'}}") Sign Up — It's Free
