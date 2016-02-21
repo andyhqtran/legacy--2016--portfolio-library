@@ -1,3 +1,5 @@
+@import "modules/base";
+
 body {
   background: #34363C;
   font-family: "Open Sans", sans-serif;
@@ -5,4 +7,39 @@ body {
   line-height: 1.25rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.logo {
+  img {
+    display: block;
+  }
+}
+
+.btn {
+  outline: none;
+  display: inline-block;
+  background: $accent;
+  max-height: 40px;
+  border: 0;
+  border-radius: 2px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  color: $white;
+  font-weight: 600;
+  line-height: normal;
+
+  &:hover {
+    background: darken($accent, 5%);
+  }
 }
