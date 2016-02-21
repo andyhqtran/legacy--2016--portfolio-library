@@ -9,6 +9,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#iron-router-progress {
+  background-color: $accent;
+  box-shadow: none;
+}
+
 .container {
   display: flex;
   flex-direction: row;
