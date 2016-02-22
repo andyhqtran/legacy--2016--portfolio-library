@@ -1,0 +1,30 @@
+@mixin mq($value) {
+  $lg-desktop: "(max-width: 1440px)";
+  $desktop: "(max-width: 1024px)";
+  $tablet: "(max-width: 760px)";
+  $phone: "(max-width: 480px)";
+
+  @if $value == lg-desktop {
+    @media #{$lg-desktop} {
+      @content;
+    }
+  }
+
+  @else if $value == desktop {
+    @media #{$desktop} {
+      @content;
+    }
+  }
+
+  @else if $value == tablet {
+    @media #{$tablet} {
+      @content;
+    }
+  }
+
+  @else if $value == phone {
+    @media #{$phone} {
+      @content;
+    }
+  }
+}
