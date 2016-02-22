@@ -13,13 +13,13 @@ header.header
         li.nav__item(class="{{isActiveRoute regex='home|post|category'}}")
           a(href="{{pathFor route='home'}}") Library
           ul.nav__menu
-            li.nav__item(class="{{isActiveRoute}}")
+            li.nav__item(class="{{isActiveRoute regex='category'}}")
               a(href="{{pathFor}}") Components
-            li.nav__item(class="{{isActiveRoute}}")
+            li.nav__item(class="{{isActiveRoute regex='category'}}")
               a(href="{{pathFor}}") Courses
-            li.nav__item(class="{{isActiveRoute}}")
+            li.nav__item(class="{{isActiveRoute regex='category'}}")
               a(href="{{pathFor}}") Experiments
-            li.nav__item(class="{{isActiveRoute}}")
+            li.nav__item(class="{{isActiveRoute regex='category'}}")
               a(href="{{pathFor}}") Templates
         li.nav__item(class="{{isActiveRoute name='blog'}}")
           a(href="{{pathFor route='blog'}}") Blog
