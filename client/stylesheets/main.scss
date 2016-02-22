@@ -88,6 +88,20 @@ h6 {
   }
 }
 
+.icon {
+  &--image {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
 .container {
   position: relative;
   max-width: 1080px;
