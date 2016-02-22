@@ -12,6 +12,7 @@
   padding: 30px;
 
   &__text {
+    margin: 0 15px 0 0;
     color: $white;
 
     p {
@@ -22,8 +23,31 @@
   }
 
   &__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
     .input {
       margin: 0 10px 0 0;
+    }
+  }
+}
+
+@include mq(tablet) {
+  .subscribe {
+    flex-wrap: wrap;
+
+    &__text {
+      width: 100%;
+      margin: 0 0 15px;
+      text-align: center;
+    }
+
+    &__form {
+      .input {
+        width: 100%;
+      }
     }
   }
 }
