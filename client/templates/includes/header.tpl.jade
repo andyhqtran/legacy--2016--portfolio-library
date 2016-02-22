@@ -10,7 +10,7 @@ header.header
     //- Nav (Block)
     .nav
       ul.nav__menu
-        li.nav__item(class="{{isActiveRoute regex='home|post'}}")
+        li.nav__item(class="{{isActiveRoute regex='home|post|category'}}")
           a(href="{{pathFor route='home'}}") Library
           ul.nav__menu
             li.nav__item(class="{{isActiveRoute}}")
@@ -21,23 +21,23 @@ header.header
               a(href="{{pathFor}}") Experiments
             li.nav__item(class="{{isActiveRoute}}")
               a(href="{{pathFor}}") Templates
-        li.nav__item(class="{{isActiveRoute 'blog'}}")
+        li.nav__item(class="{{isActiveRoute name='blog'}}")
           a(href="{{pathFor route='blog'}}") Blog
-        li.nav__item(class="{{isActiveRoute 'slack'}}")
+        li.nav__item(class="{{isActiveRoute name='slack'}}")
           a(href="{{pathFor route='slack'}}") Slack
-        li.nav__item(class="{{isActiveRoute 'pricing'}}")
+        li.nav__item(class="{{isActiveRoute name='pricing'}}")
           a(href="{{pathFor route='pricing'}}") Pricing
         li.nav__item
           a.icon.icon--dots-horizontal(href="#")
             img(src="img/icons/dots-horizontal.svg")
           ul.nav__menu
-            li.nav__item(class="{{isActiveRoute 'about'}}")
+            li.nav__item(class="{{isActiveRoute name='about'}}")
               a(href="{{pathFor route='about'}}") About
-            li.nav__item(class="{{isActiveRoute 'sponsor'}}")
+            li.nav__item(class="{{isActiveRoute name='sponsor'}}")
               a(href="{{pathFor route='sponsor'}}") Sponsor
-            li.nav__item(class="{{isActiveRoute 'legal'}}")
+            li.nav__item(class="{{isActiveRoute name='legal'}}")
               a(href="{{pathFor route='legal'}}") Legal
-            li.nav__item(class="{{isActiveRoute 'support'}}")
+            li.nav__item(class="{{isActiveRoute name='support'}}")
               a(href="{{pathFor route='support'}}") Support
 
     //- Header Divider (Element)
