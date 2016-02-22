@@ -1,0 +1,28 @@
+@import "../modules/base";
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background: rgba($black, 0.1);
+  border-radius: 2px;
+  padding: 30px;
+
+  &__text {
+    color: $white;
+
+    p {
+      margin: 0;
+      color: rgba($white, 0.5);
+      font-size: 0.75rem;
+    }
+  }
+
+  &__form {
+    .input {
+      margin: 0 10px 0 0;
+    }
+  }
+}
