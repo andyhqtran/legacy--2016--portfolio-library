@@ -20,15 +20,15 @@ footer.footer
     .column
       h5.footer__title Community
       ul.footer-menu
-        li.footer-menu__item: a(href="") Blog
-        li.footer-menu__item: a(href="") Slack
-        li.footer-menu__item: a(href="") GitHub
+        li.footer-menu__item: a(href="{{pathFor route='blog'}}") Blog
+        li.footer-menu__item: a(href="{{pathFor route='slack'}}") Slack
+        li.footer-menu__item: a(href="https://github.com/") GitHub
 
     //- Column (Block)
     .column
       h5.footer__title Support
       ul.footer-menu
-        li.footer-menu__item: a(href="") Help Center
-        li.footer-menu__item: a(href="") Licenses
-        li.footer-menu__item: a(href="") Terms of Service
-        li.footer-menu__item: a(href="") Privacy Policy
+        li.footer-menu__item: a(href="{{pathFor route='support'}}") Help Center
+        li.footer-menu__item: a(href="{{pathFor route='license'}}") License
+        li.footer-menu__item: a(href="{{pathFor route='legal'}}") Terms of Service
+        li.footer-menu__item: a(href="{{pathFor route='legal'}}") Privacy Policy
