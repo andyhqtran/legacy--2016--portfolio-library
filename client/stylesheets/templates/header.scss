@@ -1,6 +1,8 @@
 @import "../modules/base";
 
 .header {
+  z-index: 10;
+  position: relative;
   padding: 30px 0;
 
   .container {
