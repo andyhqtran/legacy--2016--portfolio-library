@@ -14,21 +14,39 @@ body {
   box-shadow: none;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  max-width: 1080px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-  box-sizing: border-box;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.logo {
-  img {
-    display: block;
-  }
+h1 {
+  font-size: 1.875rem; // 30px
+}
+
+h2 {
+  font-size: 1.5rem; // 24px
+}
+
+h3 {
+  font-size: 1.375rem; // 20px
+}
+
+h4 {
+  font-size: 1.25rem; // 18px
+}
+
+h5 {
+  font-size: 1rem; // 16px
+}
+
+h6 {
+  font-size: 0.875rem; // 14px
 }
 
 .btn {
@@ -46,5 +64,45 @@ body {
 
   &:hover {
     background: darken($accent, 5%);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.logo {
+  img {
+    display: block;
+  }
+}
+
+.page-header {
+  padding: 90px 0;
+  box-sizing: border-box;
+  color: $white;
+  text-align: center;
+
+  .container {
+    justify-content: center;
+  }
+
+  &__title,
+  &__meta {
+    width: 100%;
+    color: inherit;
+  }
+
+  &__title {}
+
+  &__meta {
+    font-weight: 300;
   }
 }
