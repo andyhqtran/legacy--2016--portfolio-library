@@ -12,7 +12,7 @@
   &--divider {
     background: 0;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 20px 0;
     color: rgba($white, 0.5);
     font-size: 0.75rem;
     text-align: center;
@@ -26,11 +26,11 @@
 
     .btn {
       &:first-child {
-        margin: 0 15px 0 0;
+        margin: 0 10px 0 0;
       }
 
       &:last-child {
-        margin: 0 0 0 15px;
+        margin: 0 0 0 10px;
       }
     }
   }
@@ -48,10 +48,24 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 0 15px;
+    margin: 0 0 20px;
 
     &:last-child {
       margin: 0;
+    }
+
+    .input {
+      &:first-child {
+        margin: 0 10px 0 0;
+      }
+
+      &:last-child {
+        margin: 0 0 0 10px;
+      }
+
+      &:only-child {
+        margin: 0;
+      }
     }
   }
 
@@ -59,9 +73,19 @@
     width: 100%;
   }
 
-  &__forgot {
-    color: $accent;
+  &__text,
+  &__link {
+    color: rgba($white, 0.5);
     font-size: 0.75rem;
+  }
+
+  &__text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__link {
+    color: $accent;
     text-decoration: none;
   }
 }
