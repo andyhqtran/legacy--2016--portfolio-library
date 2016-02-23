@@ -1,0 +1,15 @@
+{
+  "public": {},
+  "private": {
+    "oAuth": {
+      "facebook": {
+        "appId": "544396202386256",
+        "secret": "741a7081b0051bfa9052078aa8a4d582"
+      },
+      "twitter": {
+        "consumerKey": "ARtt6aUq5HrsVkjVYjAOHJuwO",
+        "secret": "hrbnNrn8qa8LlQh5O4MtZwD3P3tCjBzKUFf2f64YJB6RfCfthx"
+      }
+    }
+  }
+}
