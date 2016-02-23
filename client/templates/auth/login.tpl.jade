@@ -1,0 +1,24 @@
+.container
+  .auth.auth--login
+    h4.auth__title Log Into Your Account
+    form.auth__form
+      .auth__group
+        input.input(type="email"
+                    name="email"
+                    placeholder="Email Address")
+
+      .auth__group
+        input.input(type="password"
+                    name="password"
+                    placeholder="Password")
+
+      .auth__group
+        button.btn(type="submit") Log In
+        a.auth__forgot(href="{{pathFor route='forgot'}}") Forgot Password?
+
+  .auth.auth--divider or
+
+  .auth.auth--social
+    .auth__group
+      button.btn.btn--block.btn--facebook(type="button") <b>Log In</b> with <b>Facebook</b>
+      button.btn.btn--block.btn-twitter(type="button") <b>Log In</b> with <b>Twitter</b>

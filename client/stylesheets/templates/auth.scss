@@ -1,0 +1,67 @@
+@import "../modules/base";
+
+.auth {
+  background: rgba($black, 0.1);
+  max-width: 480px;
+  width: 100%;
+  border-radius: 2px;
+  margin: 60px auto 0;
+  padding: 30px;
+  box-sizing: border-box;
+
+  &--divider {
+    background: 0;
+    margin: 0 auto;
+    padding: 15px 0;
+    color: rgba($white, 0.5);
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &--social {
+    background: 0;
+    margin: 0 auto;
+    padding: 0;
+
+    .btn {
+      &:first-child {
+        margin: 0 15px 0 0;
+      }
+
+      &:last-child {
+        margin: 0 0 0 15px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    color: $white;
+    font-weight: 400;
+  }
+
+  &__form {}
+
+  &__group {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 15px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  &__forgot {
+    color: $accent;
+    font-size: 0.75rem;
+    text-decoration: none;
+  }
+}

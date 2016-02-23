@@ -67,6 +67,18 @@ h6 {
   &:hover {
     background: darken($accent, 5%);
   }
+
+  &--block {
+    width: 100%;
+  }
+
+  &--facebook {
+    background: #3B5998;
+  }
+
+  &--twitter {
+    background: #00ACED;
+  }
 }
 
 .input {
