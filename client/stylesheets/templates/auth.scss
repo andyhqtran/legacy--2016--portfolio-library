@@ -16,7 +16,10 @@
     color: rgba($white, 0.5);
     font-size: 0.75rem;
     text-align: center;
-    text-transform: uppercase;
+
+    .auth__link {
+      font-weight: 600;
+    }
   }
 
   &--social {
@@ -33,6 +36,10 @@
         margin: 0 0 0 10px;
       }
     }
+  }
+
+  &--footer {
+    @extend .auth--divider;
   }
 
   &__title {

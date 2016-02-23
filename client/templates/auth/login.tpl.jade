@@ -18,9 +18,12 @@
         button.btn(type="submit") Log In
         a.auth__link(href="{{pathFor route='forgot'}}") Forgot Password?
 
-  .auth.auth--divider or
+  .auth.auth--divider OR
 
   .auth.auth--social
     .auth__group
       button.btn.btn--block.btn--facebook(type="button") <b>Log In</b> with <b>Facebook</b>
       button.btn.btn--block.btn-twitter(type="button") <b>Log In</b> with <b>Twitter</b>
+
+  .auth.auth--footer
+    | Already have an account? <a class="auth__link" href="{{pathFor route='signup'}}">Sign Up</a>
