@@ -30,6 +30,7 @@ fourseven:scss
 accounts-base
 accounts-ui
 accounts-twitter
+email
 service-configuration
 
 # Router
