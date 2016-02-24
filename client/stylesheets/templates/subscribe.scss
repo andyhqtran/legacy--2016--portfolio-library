@@ -53,3 +53,20 @@
     }
   }
 }
+
+
+@include mq(phone) {
+  .subscribe {
+    &__form {
+      flex-wrap: wrap;
+
+      .input {
+        margin: 0 0 20px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
