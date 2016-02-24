@@ -146,3 +146,11 @@ h6 {
     font-weight: 300;
   }
 }
+
+@include mq(desktop) {
+  body {
+    position: relative;
+    right: 0;
+    transition: 0.2s linear;
+  }
+}
